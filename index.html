@@ -116,10 +116,10 @@
           };
 
           document.body.appendChild(script);
-
+          console.log("Функция detectPlatform вызывается");
           function detectPlatform() {
               var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
+              console.log("Функция detectPlatform вызвана");
               // Проверка на мобильное устройство
               if (/android/i.test(userAgent)) {
                   console.log("Mobile");
@@ -129,7 +129,7 @@
                   console.log("Desktop");
               }
           }
-
+          console.log("Функция detectPlatform завершила работу");
       </script>
   </body>
 </html>
