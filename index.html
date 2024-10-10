@@ -116,9 +116,7 @@
           };
 
           document.body.appendChild(script);
-          console.log("Функция detectPlatform вызывается");
           var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-          console.log("Функция detectPlatform вызвана");
           // Проверка на мобильное устройство
           if (/android/i.test(userAgent)) {
               console.log("Mobile");
@@ -127,19 +125,6 @@
           } else {
               console.log("Desktop");
           }
-          //function detectPlatform() {
-          //    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-          //    console.log("Функция detectPlatform вызвана");
-          //    // Проверка на мобильное устройство
-          //    if (/android/i.test(userAgent)) {
-          //        console.log("Mobile");
-          //    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-          //        console.log("Mobile");
-          //    } else {
-          //        console.log("Desktop");
-          //    }
-          //}
-          console.log("Функция detectPlatform завершила работу");
       </script>
   </body>
 </html>
