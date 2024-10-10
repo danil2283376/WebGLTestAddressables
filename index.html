@@ -116,8 +116,9 @@
           };
 
           document.body.appendChild(script);
+
+          //Проверка на устройство
           var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-          // Проверка на мобильное устройство
           if (/android/i.test(userAgent)) {
               console.log("Mobile");
           } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
